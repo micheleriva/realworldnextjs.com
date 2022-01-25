@@ -4,3 +4,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    overflow-x: hidden;
+}
+
+.about-shadow {
+    background: linear-gradient(90deg, #134E4A 40.47%, rgba(19, 78, 74, 0) 100%), linear-gradient(180deg, #134E4A 0%, rgba(9, 44, 41, 0.45) 24.37%);
+}
