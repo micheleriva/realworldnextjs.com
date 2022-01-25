@@ -1,0 +1,8 @@
+.next
+.vscode
+.idea
+node_modules
+build
+dist
+storybook-static
+.storybook-build
