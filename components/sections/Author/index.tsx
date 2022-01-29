@@ -1,17 +1,54 @@
 import Image from 'next/image';
+import {
+  BsTwitter,
+  BsInstagram,
+  BsMedium,
+  BsLinkedin,
+} from 'react-icons/bs/index';
+
+const social = [
+  {
+    Icon: BsTwitter,
+    url: 'https://twitter.com/MicheleRivaCode',
+    name: 'Twitter',
+  },
+  {
+    Icon: BsInstagram,
+    url: 'https://instagram.com/mitch_sleva',
+    name: 'Instagram',
+  },
+  {
+    Icon: BsMedium,
+    url: 'https://micheleriva.medium.com',
+    name: 'Medium',
+  },
+  {
+    Icon: BsLinkedin,
+    url: 'https://linkedin.com/in/MicheleRiva95',
+    name: 'LinkedIn',
+  },
+];
 
 export default function Author() {
   return (
     <div className="flex justify-center w-full min-h-screen bg-slate-900">
       <div className="grid grid-cols-8 w-9/12 gap-5 m-auto py-16 h-full">
-        <div className="flex justify-center h-full col-span-3">
+        <div className="flex flex-col justify-center h-full col-span-3">
           <div className="relative w-96 h-96">
             <Image
               src="/imgs/micheleriva.jpg"
               layout="fill"
               objectFit="cover"
               className="rounded-md"
+              alt="Michele Riva live at Codemotion 2019"
             />
+          </div>
+          <div className="flex items-center justify-center w-96 grid-cols-4 mt-5">
+            {social.map((social) => (
+              <a key={social.name} href={social.url} target="_blank">
+                <social.Icon className="text-white text-2xl mr-5" />
+              </a>
+            ))}
           </div>
         </div>
         <div className="col-span-5">
@@ -39,9 +76,10 @@ export default function Author() {
             application at the heart of their streaming websites and networks.
             <br />
             <br />
-            Nowadays, he's employed as a <b>
+            Nowadays, he&apos;s employed as a <b>
               Senior Software Architect
-            </b> in <b>NearForm</b>.
+            </b>{' '}
+            in <b>NearForm</b>.
           </p>
         </div>
       </div>

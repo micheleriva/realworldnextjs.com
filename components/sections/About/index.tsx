@@ -8,6 +8,7 @@ export default function About() {
         layout="fill"
         objectFit="cover"
         objectPosition="center"
+        alt="Gardens By the Bay, picture by Isaac Matthew on Unsplash"
       />
       <div className="absolute top-0 left-0 w-full h-full about-shadow">
         <div className="grid grid-cols-8 w-9/12 m-auto py-16 h-full">
@@ -40,6 +41,17 @@ export default function About() {
               deploy beautiful and modern architectures using Next.js with any
               headless CMS or data source.
             </p>
+          </div>
+
+          <div className="flex justify-center items-center col-span-4 w-full">
+            <div className="relative w-[35rem] h-[35rem]">
+              <Image
+                src="/imgs/real-world-nextjs-kindle.png"
+                layout="fill"
+                objectFit="cover"
+                alt="Real-World Next.js Kindle version"
+              />
+            </div>
           </div>
         </div>
       </div>

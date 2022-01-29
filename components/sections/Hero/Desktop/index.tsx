@@ -36,6 +36,7 @@ export default function Hero() {
             src="/imgs/real-world-nextjs-book.png"
             layout="fill"
             objectFit="contain"
+            alt="Real-World Next.js, book by Michele Riva"
           />
         </div>
       </div>
